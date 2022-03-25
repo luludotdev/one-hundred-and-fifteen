@@ -17,4 +17,18 @@
         <NeutralLanguage>en-GB</NeutralLanguage>
     </PropertyGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Include="manifest.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="IPA.Loader">
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="0Harmony">
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
 </Project>
