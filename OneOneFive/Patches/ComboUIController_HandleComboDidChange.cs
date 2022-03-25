@@ -19,6 +19,16 @@ namespace OneOneFive.Patches
                 return;
             }
 
+            if (_comboText.enableWordWrapping)
+            {
+                _comboText.enableWordWrapping = false;
+            }
+
+            if (_comboText.overflowMode != TextOverflowModes.Overflow)
+            {
+                _comboText.overflowMode = TextOverflowModes.Overflow;
+            }
+
             _comboText.text = combo.ToWords();
         }
     }

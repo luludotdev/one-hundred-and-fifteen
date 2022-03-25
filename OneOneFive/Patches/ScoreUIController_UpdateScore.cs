@@ -27,6 +27,16 @@ namespace OneOneFive.Patches
                 return;
             }
 
+            if (_scoreText.enableWordWrapping)
+            {
+                _scoreText.enableWordWrapping = false;
+            }
+
+            if (_scoreText.overflowMode != TextOverflowModes.Overflow)
+            {
+                _scoreText.overflowMode = TextOverflowModes.Overflow;
+            }
+
             int num = (_initData.scoreDisplayType == ScoreUIController.ScoreDisplayType.ModifiedScore) ? modifiedScore : multipliedScore;
             _scoreText.text = num.ToWords();
         }
