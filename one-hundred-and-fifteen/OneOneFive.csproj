@@ -1,8 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>OneOneFive</RootNamespace>
-  </PropertyGroup>
+    <PropertyGroup>
+        <LangVersion>9</LangVersion>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <OutputType>Library</OutputType>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+        <AssemblyName>OneOneFive</AssemblyName>
+        <RootNamespace>OneOneFive</RootNamespace>
+        <Version>0.0.1</Version>
+        <Authors>lolPants</Authors>
+        <Company>Jack Baron DEV</Company>
+        <Description>One Hundred and Fifteen</Description>
+        <Copyright>Copyright © Jack Baron DEV 2022</Copyright>
+        <NeutralLanguage>en-GB</NeutralLanguage>
+    </PropertyGroup>
 
 </Project>
