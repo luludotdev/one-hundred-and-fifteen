@@ -8,15 +8,18 @@ namespace OneOneFive.Patches
     [HarmonyPatch("Start")]
     internal class ComboUIController_Start
     {
-        private static FieldAccessor<ComboUIController, TextMeshProUGUI>.Accessor ComboText = FieldAccessor<ComboUIController, TextMeshProUGUI>.GetAccessor("_comboText");
+        private static readonly FieldAccessor<ComboUIController, TextMeshProUGUI>.Accessor ComboText = FieldAccessor<ComboUIController, TextMeshProUGUI>.GetAccessor("_comboText");
 
         internal static void Postfix(ComboUIController __instance)
         {
             var _comboText = ComboText(ref __instance);
-            if (_comboText is not null)
+            if (_comboText is null)
             {
-                _comboText.text = 0.ToWords();
+                Plugin.Logger.Error($"{nameof(_comboText)} is null!");
+                return;
             }
+
+            _comboText.text = 0.ToWords();
         }
     }
 }

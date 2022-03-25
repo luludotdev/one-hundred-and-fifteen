@@ -1,7 +1,7 @@
 using System.Reflection;
+using HarmonyLib;
 using IPA;
 using IPA.Logging;
-using HarmonyLib;
 
 namespace OneOneFive
 {
