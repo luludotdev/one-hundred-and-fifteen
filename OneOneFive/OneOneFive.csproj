@@ -29,6 +29,10 @@
         <Reference Include="0Harmony">
             <Private>false</Private>
         </Reference>
+
+        <Reference Include="Main">
+            <Private>false</Private>
+        </Reference>
     </ItemGroup>
 
 </Project>
