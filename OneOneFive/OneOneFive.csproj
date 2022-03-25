@@ -33,6 +33,10 @@
         <Reference Include="Main">
             <Private>false</Private>
         </Reference>
+
+        <Reference Include="Unity.TextMeshPro">
+            <Private>false</Private>
+        </Reference>
     </ItemGroup>
 
 </Project>
